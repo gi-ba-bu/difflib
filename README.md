@@ -16,6 +16,7 @@ they have no substring of length m or more in common.
 .ratio_min(1) is equivalent to .ratio().
 
 # Use example
+'''
 >>> s = SequenceMatcher(None, "abcd", "bcde")
 >>> s.ratio_min(1)
 0.75
@@ -25,4 +26,5 @@ they have no substring of length m or more in common.
 0.75
 >>> s.ratio_min(4)
 0.0
+'''
         
