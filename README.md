@@ -3,7 +3,7 @@
 
 ---
 
-.ratio_min(self,m) is an extension of the function .ratio(). Equivalently to .ratio(), it returns a measure of two sequences' similarity (float in [0,1]).
+.ratio_min(self,m) is an extension of the difflib's function .ratio(). Equivalently to .ratio(), it returns a measure of two sequences' similarity (float in [0,1]).
 In addition to .ratio(), it can ignore matched substrings of length less than a given threshold m. 
 
 The score is calculated as 2.0*M_min / T.
