@@ -26,7 +26,5 @@ s = SequenceMatcher(None, "abcd", "bcde")
 
 s.ratio_min(4)
 
- >>> 0
-
 ---
 Note that, the original library, named difflib, contains several other functions, here not reported. 
