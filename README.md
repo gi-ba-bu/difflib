@@ -1,5 +1,5 @@
 ## difflib2
-### difflib2 is a copy of difflib plus one function named .ratio_min() at line 558
+### Here, (a portion of) the difflib Python library is improved with one additional function named .ratio_min() at line ~549.
 
 .ratio_min(self,m) is an extension of the function .ratio(). Equivalently to .ratio(), it returns a measure of two sequences' similarity (float in [0,1]).
 In addition to .ratio(), it can ignore matched substrings of length less than a given threshold m. 
@@ -7,7 +7,7 @@ In addition to .ratio(), it can ignore matched substrings of length less than a 
 The score is calculated as 2.0*M_min / T.
 
 Where T is the total number of characters (both sequences), and
-M_min is the number of elements matched with every single match having length at least m. 
+M_min is the number of elements matched with every single match having length at least m characters. 
 
 Equivalently to .ratio(), .ratio_min() is applied to the output of SequenceMatcher(None, a, b) where a, b are the two sequences compared.
 
@@ -22,4 +22,4 @@ s = SequenceMatcher(None, "abcd", "bcde")
 
 s.ratio_min(4)
 
-        
+To note that, the original library, named difflib, contains several other functions, here not reported. 
