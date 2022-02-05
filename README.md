@@ -3,7 +3,7 @@
 
 ---
 
-.ratio_min(self,m) is an extension of the difflib's function .ratio(self). Equivalently to .ratio(self), .ratio_min(self,m) returns a measure of two sequences' similarity (float in [0,1]).
+`.ratio_min(self,m)` is an extension of the difflib's function `.ratio(self)`. Equivalently to `.ratio(self)`, `.ratio_min(self,m)` returns a measure of two sequences' similarity (float in [0,1]).
 In addition to .ratio(), it can ignore matched substrings of length less than a given threshold m. 
 
 The score is calculated as 2.0*M_min / T.
@@ -22,9 +22,9 @@ they have no substring of length m or more in common.
 
 ### Use example
 
-s = SequenceMatcher(None, "abcd", "bcde")
+```s = SequenceMatcher(None, "abcd", "bcde")
 
 s.ratio_min(4)
-
+```
 ---
 Note that, the original library, named difflib, contains several other functions, here not reported. 
