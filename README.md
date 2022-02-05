@@ -22,7 +22,8 @@ they have no substring of length m or more in common.
 
 ### Use example
 
-```s = SequenceMatcher(None, "abcd", "bcde")
+```
+s = SequenceMatcher(None, "abcd", "bcde")
 
 s.ratio_min(4)
 ```
