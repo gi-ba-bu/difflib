@@ -23,9 +23,15 @@ they have no substring of length m or more in common.
 ### Use example
 
 ```
-s = SequenceMatcher(None, "abcd", "bcde")
-
-s.ratio_min(4)
+ >>> s = SequenceMatcher(None, "abcd", "bcde")
+ >>> s.ratio_min(1)
+ 0.75
+ >>> s.ratio_min(2)
+ 0.75
+ >>> s.ratio_min(3)
+ 0.75
+ >>> s.ratio_min(4)
+ 0.0
 ```
 ---
 Note that, the original library, named difflib, contains several other functions, here not reported. 
