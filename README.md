@@ -1,5 +1,5 @@
 ## difflib2
-### Here, (a portion of) the difflib Python library is improved with one additional function named .ratio_min() at line ~549.
+### Here, the difflib Python library is improved with one additional function named .ratio_min() at line ~549.
 
 ---
 
